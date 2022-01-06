@@ -8,6 +8,6 @@ public class EstudioApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EstudioApplication.class, args);
-	}
+	} 
 
 }
