@@ -24,7 +24,7 @@ import com.kjquito.estudio.services.CategoriaService;
 public class CategoriaController {
 	
 	@Autowired
-	public CategoriaService categoriaService;
+	private CategoriaService categoriaService;
 	
 	@CrossOrigin
 	@GetMapping("/categoria")
