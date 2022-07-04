@@ -25,8 +25,8 @@ public class EstudioEntity implements Serializable {
 	private double precio;
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "categoria_id")
-	private CategoriaEntity categoriaEntity;
+	@JoinColumn(name = "categoria_id", updatable = false, nullable = false)
+	private CategoriaEntity categoria_id;
 
 	public Long getId() {
 		return id;
@@ -53,11 +53,11 @@ public class EstudioEntity implements Serializable {
 	}
 
 	public CategoriaEntity getCategoriaEntity() {
-		return categoriaEntity;
+		return categoria_id;
 	}
 
 	public void setCategoriaEntity(CategoriaEntity categoriaEntity) {
-		this.categoriaEntity = categoriaEntity;
+		this.categoria_id = categoriaEntity;
 	}
 
 	private static final long serialVersionUID = 4594491127731149403L;
