@@ -22,7 +22,6 @@ import com.kjquito.estudio.services.EstudioService;
 
 @RestController
 @CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE,RequestMethod.PUT})
-@RequestMapping("/api")
 public class EstudioController {
 	
 	@Autowired
